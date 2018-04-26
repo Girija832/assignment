@@ -8,4 +8,8 @@ export class GetDataService {
   public getList(): Observable<any> {
     return this.http.get('https://api.github.com/users');
 }
+
+  public getAllDetails(): Observable<any> {
+    return this.http.get('https://api.github.com/users');
+  }
 }

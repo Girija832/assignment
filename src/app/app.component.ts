@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { GetDataService } from './get-data.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +6,5 @@ import { GetDataService } from './get-data.service';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
-  totalList = [];
-  title = 'app';
-  searchText = '';
-  constructor(private _getDataService: GetDataService) { }
-  ngOnInit() {
-    this._getDataService.getList().subscribe(data => {
-      this.totalList = data;
-    });
+export class AppComponent {
   }
-}
